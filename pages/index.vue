@@ -4,8 +4,8 @@
       Casos de Covid em Poços de Caldas - MG
     </h1>
 
-    <div class="w-full">
-      <line-chart :width="null" :height="null" style="height: 300px; position: relative" :chart-data="formatedData" />
+    <div class="w-full h-48">
+      <line-chart :width="null" :height="450" style="height: 300px; position: relative" :chart-data="formatedData" />
     </div>
   </div>
 </template>
@@ -92,49 +92,6 @@ export default {
         datasets: formatedCovidData
       }
       return dataSet
-    }
-  },
-  mounted () {
-    this.fillData()
-  },
-  methods: {
-    fillData () {
-      this.datacollection = {
-        labels: [this.getRandomInt(), this.getRandomInt()],
-        datasets: [
-          {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          }, {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          },
-          {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          }, {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          },
-          {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          }, {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          },
-          {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          }, {
-            label: 'Data One',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          }
-        ]
-      }
-    },
-    getRandomInt () {
-      return Math.floor(Math.random() * (50 - 5 + 1)) + 5
     }
   }
 }
