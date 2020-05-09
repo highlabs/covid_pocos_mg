@@ -1,0 +1,380 @@
+[
+  {
+    "date": "17/04/2020",
+    "total_notifications": 425,
+    "investigation_finished": {
+      "tested_discarded": 27,
+      "examined_discarded": 217
+    },
+    "under_investigation": {
+      "isolated": 171,
+      "interned": 1,
+      "uti": 0,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 1,
+      "cured": 2,
+      "isolated": 4,
+      "death": 1
+    }
+  },
+  {
+    "date": "18/04/2020",
+    "total_notifications": 464,
+    "investigation_finished": {
+      "tested_discarded": 29,
+      "examined_discarded": 217
+    },
+    "under_investigation": {
+      "isolated": 204,
+      "interned": 2,
+      "uti": 1,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 1,
+      "cured": 2,
+      "isolated": 6,
+      "death": 1
+    }
+  },
+  {
+    "date": "19/04/2020",
+    "total_notifications": 484,
+    "investigation_finished": {
+      "tested_discarded": 29,
+      "examined_discarded": 233
+    },
+    "under_investigation": {
+      "isolated": 208,
+      "interned": 2,
+      "uti": 1,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 1,
+      "cured": 2,
+      "isolated": 6,
+      "death": 1
+    }
+  },
+  {
+    "date": "20/04/2020",
+    "total_notifications": 489,
+    "investigation_finished": {
+      "tested_discarded": 29,
+      "examined_discarded": 235
+    },
+    "under_investigation": {
+      "isolated": 210,
+      "interned": 2,
+      "uti": 2,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 1,
+      "cured": 2,
+      "isolated": 6,
+      "death": 1
+    }
+  },
+  {
+    "date": "21/04/2020",
+    "total_notifications": 492,
+    "investigation_finished": {
+      "tested_discarded": 30,
+      "examined_discarded": 293
+    },
+    "under_investigation": {
+      "isolated": 153,
+      "interned": 3,
+      "uti": 2,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 1,
+      "cured": 2,
+      "isolated": 6,
+      "death": 1
+    }
+  },
+  {
+    "date": "22/04/2020",
+    "total_notifications": 504,
+    "investigation_finished": {
+      "tested_discarded": 32,
+      "examined_discarded": 297
+    },
+    "under_investigation": {
+      "isolated": 159,
+      "interned": 2,
+      "uti": 3,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 1,
+      "cured": 2,
+      "isolated": 6,
+      "death": 1
+    }
+  },
+  {
+    "date": "23/04/2020",
+    "total_notifications": 532,
+    "investigation_finished": {
+      "tested_discarded": 32,
+      "examined_discarded": 300
+    },
+    "under_investigation": {
+      "isolated": 182,
+      "interned": 1,
+      "uti": 4,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 0,
+      "cured": 6,
+      "isolated": 4,
+      "death": 2
+    }
+  },
+  {
+    "date": "24/04/2020",
+    "total_notifications": 532,
+    "investigation_finished": {
+      "tested_discarded": 34,
+      "examined_discarded": 318
+    },
+    "under_investigation": {
+      "isolated": 163,
+      "interned": 0,
+      "uti": 3,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 0,
+      "cured": 7,
+      "isolated": 4,
+      "death": 2
+    }
+  },
+  {
+    "date": "25/04/2020",
+    "total_notifications": 538,
+    "investigation_finished": {
+      "tested_discarded": 34,
+      "examined_discarded": 318
+    },
+    "under_investigation": {
+      "isolated": 169,
+      "interned": 0,
+      "uti": 3,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 0,
+      "cured": 7,
+      "isolated": 4,
+      "death": 2
+    }
+  },
+  {
+    "date": "27/04/2020",
+    "total_notifications": 542,
+    "investigation_finished": {
+      "tested_discarded": 37,
+      "examined_discarded": 318
+    },
+    "under_investigation": {
+      "isolated": 172,
+      "interned": 0,
+      "uti": 1,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 7,
+      "isolated": 3,
+      "death": 2
+    }
+  },
+  {
+    "date": "28/04/2020",
+    "total_notifications": 546,
+    "investigation_finished": {
+      "tested_discarded": 37,
+      "examined_discarded": 318
+    },
+    "under_investigation": {
+      "isolated": 173,
+      "interned": 1,
+      "uti": 1,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 7,
+      "isolated": 5,
+      "death": 2
+    }
+  },
+  {
+    "date": "29/04/2020",
+    "total_notifications": 549,
+    "investigation_finished": {
+      "tested_discarded": 37,
+      "examined_discarded": 322
+    },
+    "under_investigation": {
+      "isolated": 171,
+      "interned": 0,
+      "uti": 2,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 7,
+      "isolated": 6,
+      "death": 2
+    }
+  },
+  {
+    "date": "30/04/2020",
+    "total_notifications": 563,
+    "investigation_finished": {
+      "tested_discarded": 37,
+      "examined_discarded": 328
+    },
+    "under_investigation": {
+      "isolated": 177,
+      "interned": 1,
+      "uti": 0,
+      "death": 2
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 0,
+      "cured": 10,
+      "isolated": 6,
+      "death": 2
+    }
+  },
+  {
+    "date": "01/05/2020",
+    "total_notifications": 574,
+    "investigation_finished": {
+      "tested_discarded": 37,
+      "examined_discarded": 334
+    },
+    "under_investigation": {
+      "isolated": 181,
+      "interned": 1,
+      "uti": 0,
+      "death": 2
+    },
+    "confirmed": {
+      "interned": 0,
+      "uti": 0,
+      "cured": 10,
+      "isolated": 7,
+      "death": 2
+    }
+  },
+  {
+    "date": "02/05/2020",
+    "total_notifications": 582,
+    "investigation_finished": {
+      "tested_discarded": 38,
+      "examined_discarded": 335
+    },
+    "under_investigation": {
+      "isolated": 183,
+      "interned": 1,
+      "uti": 2,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 10,
+      "isolated": 9,
+      "death": 2
+    }
+  },
+  {
+    "date": "04/05/2020",
+    "total_notifications": 600,
+    "investigation_finished": {
+      "tested_discarded": 38,
+      "examined_discarded": 343
+    },
+    "under_investigation": {
+      "isolated": 194,
+      "interned": 0,
+      "uti": 2,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 16,
+      "isolated": 3,
+      "death": 1
+    }
+  },
+  {
+    "date": "05/05/2020",
+    "total_notifications": 604,
+    "investigation_finished": {
+      "tested_discarded": 38,
+      "examined_discarded": 343
+    },
+    "under_investigation": {
+      "isolated": 195,
+      "interned": 0,
+      "uti": 1,
+      "death": 2
+    },
+    "confirmed": {
+      "interned": 2,
+      "uti": 0,
+      "cured": 17,
+      "isolated": 4,
+      "death": 2
+    }
+  },
+  {
+    "date": "06/05/2020",
+    "total_notifications": 640,
+    "investigation_finished": {
+      "tested_discarded": 38,
+      "examined_discarded": 354
+    },
+    "under_investigation": {
+      "isolated": 220,
+      "interned": 0,
+      "uti": 1,
+      "death": 2
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 17,
+      "isolated": 5,
+      "death": 2
+    }
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "date": "25/03/2020",
+    "notification_total": 49,
+    "suspect": 47,
+    "confirmed": 2,
+    "discarded": 1,
+    "total": null
+  },
+  {
+    "date": "26/03/2020",
+    "notification_total": 60,
+    "suspect": 58,
+    "confirmed": 1,
+    "discarded": 1,
+    "total": null
+  },
+  {
+    "date": "27/03/2020",
+    "notification_total": 67,
+    "suspect": 65,
+    "confirmed": 1,
+    "discarded": 1,
+    "total": null
+  },
+  {
+    "date": "29/03/2020",
+    "notification_total": 67,
+    "suspect": 65,
+    "confirmed": 1,
+    "discarded": 1,
+    "total": null
+  },
+  {
+    "date": "30/03/2020",
+    "notification_total": 67,
+    "suspect": 65,
+    "confirmed": 1,
+    "discarded": 1,
+    "total": null
+  },
+  {
+    "date": "31/30/2020",
+    "notification_total": 67,
+    "suspect": 65,
+    "confirmed": 1,
+    "discarded": 1,
+    "total": null
+  },
+  {
+    "date": "01/04/2020",
+    "notification_total": 182,
+    "suspect": 178,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "02/04/2020",
+    "notification_total": 206,
+    "suspect": 202,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "03/04/2020",
+    "notification_total": 214,
+    "suspect": 210,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "04/04/2020",
+    "notification_total": 243,
+    "suspect": 239,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "05/04/2020",
+    "notification_total": 266,
+    "suspect": 262,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "06/04/2020",
+    "notification_total": 276,
+    "suspect": 272,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "07/04/2020",
+    "notification_total": 283,
+    "suspect": 279,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "08/04/2020",
+    "notification_total": 300,
+    "suspect": 266,
+    "confirmed": 2,
+    "discarded": 2,
+    "total": null
+  },
+  {
+    "date": "09/04/2020",
+    "notification_total": 318,
+    "suspect": 312,
+    "confirmed": 3,
+    "discarded": 3,
+    "total": null
+  },
+  {
+    "date": "11/04/2020",
+    "notification_total": 318,
+    "suspect": 312,
+    "confirmed": 3,
+    "discarded": 3,
+    "total": null
+  },
+  {
+    "date": "13/04/2020",
+    "notification_total": 347,
+    "suspect": 338,
+    "confirmed": 4,
+    "discarded": 27,
+    "deaths": 0,
+    "total": null
+  },
+  {
+    "date": "14/04/2020",
+    "notification_total": 347,
+    "suspect": 338,
+    "confirmed": 4,
+    "discarded": 27,
+    "total": null
+  },
+  {
+    "date": "15/04/2020",
+    "notification_total": 406,
+    "suspect": 397,
+    "confirmed": 4,
+    "discarded": 27,
+    "deaths": 0,
+    "total": null
+  },
+  {
+    "date": "16/04/2020",
+    "notification_total": 425,
+    "suspect": 416,
+    "confirmed": 4,
+    "discarded": 27,
+    "deaths": 1,
+    "total": null
+  }
+]
