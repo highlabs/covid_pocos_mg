@@ -1,77 +1,141 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        covid_pocos
-      </h1>
-      <h2 class="subtitle">
-        Casos de COVID-19 em Pocos de Caldas - MG
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="container mx-auto px-2">
+    <h1 class="text-lg font-bold">
+      Casos de Covid em Poços de Caldas - MG
+    </h1>
+
+    <div class="w-full">
+      <line-chart :width="null" :height="null" style="height: 300px; position: relative" :chart-data="formatedData" />
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import LineChart from '@/charts/LineChart.js'
+import CovidJson from '@/content/codiv_v3.json'
 
 export default {
   components: {
-    Logo
+    LineChart
+  },
+  data () {
+    return {
+      datacollection: null
+    }
+  },
+  computed: {
+    formatedData () {
+      const covidData = CovidJson
+
+      const formatedCovidData = [
+        {
+          label: 'Suspeitos Notificados',
+          borderColor: '#6898c7',
+          backgroundColor: 'transparent',
+          data: covidData.map(item => item.total_notifications)
+        },
+        {
+          label: 'Investigação Concluída',
+          borderColor: '#e99c2a',
+          backgroundColor: 'transparent',
+          data: covidData.map((item) => {
+            const {
+              tested_discarded: testedDiscarded,
+              examined_discarded: examinedDiscarded
+            } = item.investigation_finished
+
+            const total = testedDiscarded + examinedDiscarded
+
+            return total
+          })
+        },
+        {
+          label: 'Casos suspeitos em investigação',
+          borderColor: '#df1d5f',
+          backgroundColor: 'transparent',
+          data: covidData.map((item) => {
+            const {
+              isolated,
+              interned,
+              uti,
+              death
+            } = item.under_investigation
+            const total = isolated + interned + uti + death
+
+            return total
+          })
+        },
+        {
+          label: 'Casos confirmados',
+          borderColor: '#358b91',
+          backgroundColor: 'transparent',
+          data: covidData.map((item) => {
+            const {
+              interned,
+              uti,
+              cured,
+              isolated,
+              death
+            } = item.confirmed
+
+            const total = interned + uti + cured + isolated + death
+
+            return total
+          })
+        }
+      ]
+
+      const dateLabels = covidData.map(item => item.date)
+
+      const dataSet = {
+        labels: dateLabels,
+        datasets: formatedCovidData
+      }
+      return dataSet
+    }
+  },
+  mounted () {
+    this.fillData()
+  },
+  methods: {
+    fillData () {
+      this.datacollection = {
+        labels: [this.getRandomInt(), this.getRandomInt()],
+        datasets: [
+          {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          }, {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          },
+          {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          }, {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          },
+          {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          }, {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          },
+          {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          }, {
+            label: 'Data One',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          }
+        ]
+      }
+    },
+    getRandomInt () {
+      return Math.floor(Math.random() * (50 - 5 + 1)) + 5
+    }
   }
 }
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
