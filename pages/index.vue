@@ -4,8 +4,9 @@
       Casos de Covid em Poços de Caldas - MG
     </h1>
 
-    <div class="w-full h-48">
-      <line-chart :width="null" :height="450" style="height: 300px; position: relative" :chart-data="formatedData" />
+    <div class="w-full my-8">
+      <line-chart :width="null" :height="null" :chart-data="formatedData" />
+    </div>
     </div>
   </div>
 </template>
