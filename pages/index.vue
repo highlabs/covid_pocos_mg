@@ -93,6 +93,14 @@ export default {
       }
       return dataSet
     }
+  },
+  head () {
+    return {
+      title: 'Home',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Casos de Covid-19 em Poços de Caldas - MG' }
+      ]
+    }
   }
 }
 </script>
