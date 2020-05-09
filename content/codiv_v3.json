@@ -376,5 +376,47 @@
       "isolated": 5,
       "death": 2
     }
+  },
+  {
+    "date": "07/05/2020",
+    "total_notifications": 662,
+    "investigation_finished": {
+      "tested_discarded": 38,
+      "examined_discarded": 370
+    },
+    "under_investigation": {
+      "isolated": 225,
+      "interned": 1,
+      "uti": 0,
+      "death": 2
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 19,
+      "isolated": 4,
+      "death": 2
+    }
+  },
+  {
+    "date": "08/05/2020",
+    "total_notifications": 679,
+    "investigation_finished": {
+      "tested_discarded": 38,
+      "examined_discarded": 380
+    },
+    "under_investigation": {
+      "isolated": 231,
+      "interned": 1,
+      "uti": 1,
+      "death": 2
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 19,
+      "isolated": 4,
+      "death": 2
+    }
   }
 ]
