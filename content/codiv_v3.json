@@ -418,5 +418,26 @@
       "isolated": 4,
       "death": 2
     }
+  },
+  {
+    "date": "09/05/2020",
+    "total_notifications": 684,
+    "investigation_finished": {
+      "tested_discarded": 38,
+      "examined_discarded": 382
+    },
+    "under_investigation": {
+      "isolated": 233,
+      "interned": 0,
+      "uti": 3,
+      "death": 1
+    },
+    "confirmed": {
+      "interned": 1,
+      "uti": 0,
+      "cured": 21,
+      "isolated": 2,
+      "death": 3
+    }
   }
 ]
