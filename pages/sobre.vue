@@ -8,9 +8,3 @@
     <p>A ideia desse site é apenas exibir os dados de forma mais amigável e compilada.</p>
   </div>
 </template>
-
-<style scoped>
-p {
-  @apply mb-2
-}
-</style>

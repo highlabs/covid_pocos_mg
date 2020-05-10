@@ -13,3 +13,12 @@
     <nuxt />
   </main>
 </template>
+
+<style>
+p {
+  @apply mb-2
+}
+h1, h2, h3 {
+  @apply mb-4
+}
+</style>
