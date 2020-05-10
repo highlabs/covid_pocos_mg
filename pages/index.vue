@@ -10,31 +10,19 @@
       Descrição dos dados
     </h2>
 
-    <div class="flex flex-wrap items-stretch">
-      <div v-for="box in boxList" :key="box.title" class="flex items-stretch w-full md:w-1/3">
-        <div class="w-full p-4 m-1 border-4" :class="box.color">
-          <h3 class="font-bold">
-            {{ box.title }}
-          </h3>
-          <p>{{ box.description }}</p>
-          <ul>
-            <li v-for="item in box.list" :key="item">
-              {{ item }}
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <Boxes :list="boxList" />
   </div>
 </template>
 
 <script>
 import LineChart from '@/components/Linechart'
+import Boxes from '@/components/Boxes'
 import CovidJson from '@/content/codiv_v3.json'
 
 export default {
   components: {
-    LineChart
+    LineChart,
+    Boxes
   },
   data () {
     return {
@@ -86,24 +74,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.yellow-border {
-  border-color: #e99c2a
-}
-.blue-border {
-  border-color: #6898c7
-}
-.pink-border {
-  border-color: #df1d5f;
-}
-.green-boder {
-  border-color: #358b91;
-}
-ul {
-  @apply pl-8
-}
-li {
-  @apply list-disc
-}
-</style>
