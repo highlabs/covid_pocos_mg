@@ -15,7 +15,9 @@
     <div class="flex flex-wrap items-stretch">
       <div v-for="box in boxList" :key="box.title" class="flex items-stretch w-full md:w-1/3">
         <div class="w-full p-4 m-1 border-4" :class="box.color">
-          <h3>{{ box.title }}</h3>
+          <h3 class="font-bold">
+            {{ box.title }}
+          </h3>
           <p>{{ box.description }}</p>
           <ul>
             <li v-for="item in box.list" :key="item">
