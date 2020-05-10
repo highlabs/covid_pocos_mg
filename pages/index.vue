@@ -4,13 +4,13 @@
       Casos de Covid em Poços de Caldas - MG
     </h1>
 
-    <LineChart :data="covidData" />
+    <LineChart :data="formatedData" />
 
     <h2 class="mb-4 text-lg font-bold">
       Descrição dos dados
     </h2>
 
-    <Boxes :list="boxList" />
+    <Boxes />
   </div>
 </template>
 
@@ -27,41 +27,77 @@ export default {
   data () {
     return {
       datacollection: null,
-      covidData: CovidJson,
-      boxList: [
+      covidData: CovidJson
+    }
+  },
+  computed: {
+    formatedData () {
+      const covidData = this.covidData
+      const formatedCovidData = [
         {
-          title: 'Investigação concluída',
-          description: 'Esses dados agrupam os seguintes números:',
-          color: 'yellow-border',
-          list: [
-            'Descartado por exame laboratorial',
-            'Alta por critério clínico'
-          ]
+          label: 'Suspeitos Notificados',
+          borderColor: '#6898c7',
+          backgroundColor: 'transparent',
+          data: covidData.map(item => item.total_notifications)
         },
         {
-          title: 'Casos suspeitos em investigação',
-          desc: 'Esses dados agrupam os seguintes números:',
-          color: 'pink-border',
-          list: [
-            'Em isolamento domiciliar (casos leves, sem indicação de realizar exame conforme Ministério da Saúde',
-            'Internados em ala',
-            'Internados em UTI',
-            'Óbitos em investigação'
-          ]
+          label: 'Investigação Concluída',
+          borderColor: '#e99c2a',
+          backgroundColor: 'transparent',
+          data: covidData.map((item) => {
+            const {
+              tested_discarded: testedDiscarded,
+              examined_discarded: examinedDiscarded
+            } = item.investigation_finished
+
+            const total = testedDiscarded + examinedDiscarded
+
+            return total
+          })
         },
         {
-          title: 'Casos Confirmados',
-          desc: 'Esses dados agrupam os seguintes números:',
-          color: 'green-border',
-          list: [
-            'Internados em ala',
-            'Internados em UTI',
-            'Recuperados',
-            'Em isolamento domiciliar',
-            'Óbitos confirmados'
-          ]
+          label: 'Casos suspeitos em investigação',
+          borderColor: '#df1d5f',
+          backgroundColor: 'transparent',
+          data: covidData.map((item) => {
+            const {
+              isolated,
+              interned,
+              uti,
+              death
+            } = item.under_investigation
+            const total = isolated + interned + uti + death
+
+            return total
+          })
+        },
+        {
+          label: 'Casos confirmados',
+          borderColor: '#358b91',
+          backgroundColor: 'transparent',
+          data: covidData.map((item) => {
+            const {
+              interned,
+              uti,
+              cured,
+              isolated,
+              death
+            } = item.confirmed
+
+            const total = interned + uti + cured + isolated + death
+
+            return total
+          })
         }
       ]
+
+      const dateLabels = covidData.map(item => item.date)
+
+      const dataSet = {
+        labels: dateLabels,
+        datasets: formatedCovidData
+      }
+      return dataSet
     }
   },
   head () {
