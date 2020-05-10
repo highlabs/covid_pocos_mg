@@ -19,10 +19,47 @@
 <script>
 export default {
   name: 'Boxes',
-  props: {
-    list: {
-      type: Array,
-      required: true
+  data () {
+    return {
+      list: [
+        {
+          title: 'Suspeitos notificados',
+          description: 'Esses dados agrupam todos os números notificados em poços.',
+          color: 'blue-border'
+        },
+        {
+          title: 'Investigação concluída',
+          description: 'Esses dados agrupam os seguintes números:',
+          color: 'yellow-border',
+          list: [
+            'Descartado por exame laboratorial',
+            'Alta por critério clínico'
+          ]
+        },
+        {
+          title: 'Casos suspeitos em investigação',
+          desc: 'Esses dados agrupam os seguintes números:',
+          color: 'pink-border',
+          list: [
+            'Em isolamento domiciliar (casos leves, sem indicação de realizar exame conforme Ministério da Saúde',
+            'Internados em ala',
+            'Internados em UTI',
+            'Óbitos em investigação'
+          ]
+        },
+        {
+          title: 'Casos Confirmados',
+          desc: 'Esses dados agrupam os seguintes números:',
+          color: 'green-border',
+          list: [
+            'Internados em ala',
+            'Internados em UTI',
+            'Recuperados',
+            'Em isolamento domiciliar',
+            'Óbitos confirmados'
+          ]
+        }
+      ]
     }
   }
 }
