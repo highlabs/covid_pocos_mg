@@ -1,16 +1,15 @@
 <template>
-  <div class="w-full my-8">
-    <line-chart :width="null" :height="null" :chart-data="data" />
-  </div>
+  <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :data-format="dataFormat"
+    :data-source="dataSource"
+  />
 </template>
 
 <script>
-import LineChart from '@/charts/LineChart.js'
-
 export default {
-  components: {
-    LineChart
-  },
   props: {
     data: {
       type: Object,

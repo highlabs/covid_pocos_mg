@@ -12,10 +12,12 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "apexcharts": "^3.19.2",
     "chart.js": "^2.9.3",
+    "core-js": "2",
     "date-fns": "^2.13.0",
     "nuxt": "^2.0.0",
-    "vue-chartjs": "^3.5.0"
+    "vue-apexcharts": "^1.5.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

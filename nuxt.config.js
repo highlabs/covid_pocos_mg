@@ -28,6 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/FusionCharts', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules

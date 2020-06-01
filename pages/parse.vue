@@ -1,17 +1,9 @@
 <template>
-  <div class="container px-2 pb-4 mx-auto">
-    <h1 class="text-xl font-bold">
-      Casos de Covid em Poços de Caldas - MG
-    </h1>
-
+  <div>
     <apexchart type="line" height="350" :options="chartOptions" :series="series" />
-
-    <h2 class="mb-4 text-base font-bold">
-      Fonte: <a href="https://pocosdecaldas.mg.gov.br/noticias/64500boletinsdiarios/">Prefeitura de Poços de Caldas/a>
-      </a>
-    </h2>
-
-    <Boxes />
+    <button @click="parseData">
+      parse
+    </button>
   </div>
 </template>
 
@@ -115,9 +107,6 @@ export default {
       series: [],
       json: CovidJson
     }
-  },
-  mounted () {
-    this.parseData()
   },
   methods: {
     parseData () {
