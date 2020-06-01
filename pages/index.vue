@@ -7,8 +7,7 @@
     <apexchart type="line" height="350" :options="chartOptions" :series="series" />
 
     <h2 class="mb-4 text-base font-bold">
-      Fonte: <a href="https://pocosdecaldas.mg.gov.br/noticias/64500boletinsdiarios/">Prefeitura de Poços de Caldas/a>
-      </a>
+      Fonte: <a href="https://pocosdecaldas.mg.gov.br/noticias/64500boletinsdiarios/">Prefeitura de Poços de Caldas</a>
     </h2>
 
     <Boxes />
