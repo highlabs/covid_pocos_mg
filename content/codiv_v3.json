@@ -1048,5 +1048,149 @@
       "isolated": 16
     },
     "non_resident_death": 2
+  },
+  {
+    "date": "10/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1286
+    },
+    "under_investigation": {
+      "death": 1
+    },
+    "confirmed": {
+      "cured": 69,
+      "death": 4,
+      "interned": 0,
+      "uti": 4,
+      "isolated": 15
+    },
+    "non_resident_death": 2
+  },
+  {
+    "date": "10/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1286
+    },
+    "under_investigation": {
+      "death": 1
+    },
+    "confirmed": {
+      "cured": 69,
+      "death": 4,
+      "interned": 0,
+      "uti": 4,
+      "isolated": 15
+    },
+    "non_resident_death": 2
+  },
+  {
+    "date": "12/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1342
+    },
+    "under_investigation": {
+      "death": 0
+    },
+    "confirmed": {
+      "cured": 70,
+      "death": 4,
+      "interned": 0,
+      "uti": 5,
+      "isolated": 16
+    },
+    "non_resident_death": 2
+  },
+  {
+    "date": "13/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1375
+    },
+    "under_investigation": {
+      "death": 0
+    },
+    "confirmed": {
+      "cured": 70,
+      "death": 4,
+      "interned": 0,
+      "uti": 7,
+      "isolated": 15
+    },
+    "non_resident_death": 2
+  },
+  {
+    "date": "13/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1375
+    },
+    "under_investigation": {
+      "death": 0
+    },
+    "confirmed": {
+      "cured": 70,
+      "death": 4,
+      "interned": 0,
+      "uti": 7,
+      "isolated": 15
+    },
+    "non_resident_death": 2
+  },
+  {
+    "date": "14/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1375
+    },
+    "under_investigation": {
+      "death": 0
+    },
+    "confirmed": {
+      "cured": 70,
+      "death": 4,
+      "interned": 0,
+      "uti": 7,
+      "isolated": 15
+    },
+    "non_resident_death": 2
+  },
+  {
+    "date": "15/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1406
+    },
+    "under_investigation": {
+      "death": 0
+    },
+    "confirmed": {
+      "cured": 71,
+      "death": 4,
+      "interned": 1,
+      "uti": 7,
+      "isolated": 21
+    },
+    "non_resident_death": 2
+  },
+  {
+    "date": "65/06/2020",
+    "total_notifications": 825,
+    "investigation_finished": {
+      "total": 1558
+    },
+    "under_investigation": {
+      "death": 0
+    },
+    "confirmed": {
+      "cured": 71,
+      "death": 4,
+      "interned": 2,
+      "uti": 6,
+      "isolated": 22
+    },
+    "non_resident_death": 2
   }
 ]
