@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+
+publish_mode: editorial_workflow
+public_folder: "/static"
+media_library:
+  name: uploadcare
+collections:
+  - name: "covid"
+    label: "COVID-19"
+    files:
+      - file: "content/codiv_v3.json"
+        label: "Casos"
+        name: "casos"
+
+        fields:
+          - { name: date, label: Data, widget: date, format: 'DD/MM/YYYY' }
+          - name: investigation_finished
+            label: Investigação Concluída
+            widget: list
+            fields:
+              - {label: total, name: total, widget: number, valueType: int}
+          - name: under_investigation
+            label: Em investigação
+            widget: list
+            fields:
+              - {label: Óbitos, name: death, widget: number, valueType: int}
+          - name: confirmed
+            label: Confirmados
+            widget: list
+            fields:
+              - {label: Curados, name: cured, widget: number, valueType: int}
+              - {label: Óbitos, name: death, widget: number, valueType: int}
+              - {label: Internados em Ala, name: interned, widget: number, valueType: int}
+              - {label: UTI, name: uti, widget: number, valueType: int}
+              - {label: Isolados, name: isolated, widget: number, valueType: int}
+          - { label: Óbitos de não-residentes, name: non_resident_death, widget: number, valueType: int}
