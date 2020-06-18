@@ -13,7 +13,7 @@ collections:
         name: "casos"
 
         fields:
-          - { name: date, label: Data, widget: date, format: 'DD/MM/YYYY' }
+          - { name: date, label: Data, widget: datetime, dateFormat: 'DD/MM/YYYY' }
           - name: investigation_finished
             label: Investigação Concluída
             widget: object
