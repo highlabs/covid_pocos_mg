@@ -1,17 +1,16 @@
 backend:
   name: git-gateway
 
-publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
+
 collections:
   - name: "covid"
     label: "COVID-19"
     files:
       - file: "content/codiv_v3.json"
         label: "Casos"
-        name: "casos"
-
+        name: "cases"
         fields:
           - label: casos
             name: cases
