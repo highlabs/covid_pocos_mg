@@ -13,24 +13,28 @@ collections:
         name: "casos"
 
         fields:
-          - { name: date, label: Data, widget: datetime, dateFormat: 'DD/MM/YYYY' }
-          - name: investigation_finished
-            label: Investigação Concluída
-            widget: object
+          - label: casos
+            name: cases
+            widget: list
             fields:
-              - {label: total, name: total, widget: number, valueType: float}
-          - name: under_investigation
-            label: Em investigação
-            widget: object
-            fields:
-              - {label: Óbitos, name: death, widget: number, valueType: float}
-          - name: confirmed
-            label: Confirmados
-            widget: object
-            fields:
-              - {label: Curados, name: cured, widget: number, valueType: float}
-              - {label: Óbitos, name: death, widget: number, valueType: float}
-              - {label: Internados em Ala, name: interned, widget: number, valueType: float}
-              - {label: UTI, name: uti, widget: number, valueType: float}
-              - {label: Isolados, name: isolated, widget: number, valueType: float}
-          - { label: Óbitos de não-residentes, name: non_resident_death, widget: number, valueType: float}
+              - { name: date, label: Data, widget: datetime, dateFormat: 'DD/MM/YYYY' }
+              - name: investigation_finished
+                label: Investigação Concluída
+                widget: object
+                fields:
+                  - {label: total, name: total, widget: number, valueType: float}
+              - name: under_investigation
+                label: Em investigação
+                widget: object
+                fields:
+                  - {label: Óbitos, name: death, widget: number, valueType: float}
+              - name: confirmed
+                label: Confirmados
+                widget: object
+                fields:
+                  - {label: Curados, name: cured, widget: number, valueType: float}
+                  - {label: Óbitos, name: death, widget: number, valueType: float}
+                  - {label: Internados em Ala, name: interned, widget: number, valueType: float}
+                  - {label: UTI, name: uti, widget: number, valueType: float}
+                  - {label: Isolados, name: isolated, widget: number, valueType: float}
+              - { label: Óbitos de não-residentes, name: non_resident_death, widget: number, valueType: float}
