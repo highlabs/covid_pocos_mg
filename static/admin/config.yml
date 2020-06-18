@@ -2,9 +2,8 @@ backend:
   name: git-gateway
 
 publish_mode: editorial_workflow
-public_folder: "/static"
-media_library:
-  name: uploadcare
+media_folder: static/img
+public_folder: /img
 collections:
   - name: "covid"
     label: "COVID-19"
