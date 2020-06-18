@@ -16,17 +16,17 @@ collections:
           - { name: date, label: Data, widget: date, format: 'DD/MM/YYYY' }
           - name: investigation_finished
             label: Investigação Concluída
-            widget: list
+            widget: object
             fields:
               - {label: total, name: total, widget: number, valueType: int}
           - name: under_investigation
             label: Em investigação
-            widget: list
+            widget: object
             fields:
               - {label: Óbitos, name: death, widget: number, valueType: int}
           - name: confirmed
             label: Confirmados
-            widget: list
+            widget: object
             fields:
               - {label: Curados, name: cured, widget: number, valueType: int}
               - {label: Óbitos, name: death, widget: number, valueType: int}
