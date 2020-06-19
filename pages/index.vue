@@ -3,11 +3,15 @@
     <h1 class="text-xl font-bold">
       Casos de Covid em Poços de Caldas - MG
     </h1>
+    <div class="py-4">
+      <apexchart type="line" height="350" :options="totalCases" :series="series" />
+    </div>
+    <div class="py-4">
+      <apexchart type="line" height="350" :options="confirmedOptions" :series="confirmed" />
+    </div>
 
-    <apexchart type="line" height="350" :options="chartOptions" :series="series" />
-
-    <h2 class="mb-4 text-base font-bold">
-      Fonte: <a href="https://pocosdecaldas.mg.gov.br/noticias/64500boletinsdiarios/">Prefeitura de Poços de Caldas</a>
+    <h2 class="mb-4 text-sm">
+      Fonte: <a class="underline" href="https://pocosdecaldas.mg.gov.br/noticias/64500boletinsdiarios/">Prefeitura de Poços de Caldas</a>
     </h2>
 
     <Boxes />
@@ -112,7 +116,38 @@ export default {
         }
       },
       series: [],
+      confirmed: [],
       json: CovidJson
+    }
+  },
+  computed: {
+    confirmedOptions () {
+      return {
+        ...this.chartOptions,
+        title: {
+          text: 'Confirmados',
+          align: 'left'
+        },
+        yaxis: {
+          title: {
+            text: 'casos'
+          }
+        }
+      }
+    },
+    totalCases () {
+      return {
+        ...this.chartOptions,
+        title: {
+          text: 'Totais',
+          align: 'left'
+        },
+        yaxis: {
+          title: {
+            text: 'casos'
+          }
+        }
+      }
     }
   },
   mounted () {
@@ -123,27 +158,57 @@ export default {
       const confirmedList = []
       const cured = []
       const deaths = []
-      this.json.map((item) => {
+
+      const confirmedInterned = []
+      const confirmedUti = []
+      const confirmedCured = []
+      const confirmedIsolated = []
+      const confirmedDeath = []
+      const investigationIsolated = []
+      const investigationInterned = []
+      const investigationUti = []
+      const investigationDeath = []
+
+      const nonResidentDeath = []
+
+      this.json.cases.map((item) => {
         const date = this.formatDate(item.date)
-        confirmedList.push(
-          {
-            x: date,
-            y: this.calculateTotalobject(item.confirmed)
-          }
-        )
+        confirmedList.push({ x: date, y: this.calculateTotalobject(item.confirmed) })
+        confirmedInterned.push({ x: date, y: item.confirmed.interned })
+        confirmedUti.push({ x: date, y: item.confirmed.uti })
+        confirmedCured.push({ x: date, y: item.confirmed.cured })
+        confirmedIsolated.push({ x: date, y: item.confirmed.isolated })
+        confirmedDeath.push({ x: date, y: item.confirmed.death })
+        nonResidentDeath.push({ x: date, y: item.non_resident_death || 0 })
+        investigationIsolated.push({ x: date, y: item.under_investigation.isolated })
+        investigationInterned.push({ x: date, y: item.under_investigation.interned })
+        investigationUti.push({ x: date, y: item.under_investigation.uti })
+        investigationDeath.push({ x: date, y: item.under_investigation.death })
+
         cured.push({
           x: date,
           y: item.confirmed?.cured
         })
+
         deaths.push({
           x: date,
           y: item.confirmed?.death + (item.non_resident_death || 0)
         })
       })
+
       this.series = [
         { data: confirmedList, name: 'Confirmados' },
         { data: cured, name: 'Recuperados' },
         { data: deaths, name: 'Óbitos' }
+      ]
+
+      this.confirmed = [
+        { data: confirmedInterned, name: 'Internados em Ala' },
+        { data: confirmedUti, name: 'UTI' },
+        { data: confirmedCured, name: 'Recuperados' },
+        { data: confirmedIsolated, name: 'Isolados' },
+        { data: confirmedDeath, name: 'Óbitos' },
+        { data: nonResidentDeath, name: 'Óbitos de não-residentes' }
       ]
     },
     formatDate (date) {
