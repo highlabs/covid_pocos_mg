@@ -1390,6 +1390,78 @@
                 "isolated": 61
             },
             "non_resident_death": 2
+        },
+        {
+            "date": "28/06/2020",
+            "total_notifications": 825,
+            "investigation_finished": {
+                "total": 2020
+            },
+            "under_investigation": {
+                "death": 2
+            },
+            "confirmed": {
+                "cured": 99,
+                "death": 6,
+                "interned": 2,
+                "uti": 3,
+                "isolated": 61
+            },
+            "non_resident_death": 2
+        },
+        {
+            "date": "29/06/2020",
+            "total_notifications": 825,
+            "investigation_finished": {
+                "total": 2528
+            },
+            "under_investigation": {
+                "death": 2
+            },
+            "confirmed": {
+                "cured": 105,
+                "death": 6,
+                "interned": 1,
+                "uti": 4,
+                "isolated": 63
+            },
+            "non_resident_death": 2
+        },
+        {
+            "date": "30/06/2020",
+            "total_notifications": 825,
+            "investigation_finished": {
+                "total": 2559
+            },
+            "under_investigation": {
+                "death": 1
+            },
+            "confirmed": {
+                "cured": 114,
+                "death": 6,
+                "interned": 1,
+                "uti": 5,
+                "isolated": 72
+            },
+            "non_resident_death": 2
+        },
+        {
+            "date": "01/07/2020",
+            "total_notifications": 825,
+            "investigation_finished": {
+                "total": 3021
+            },
+            "under_investigation": {
+                "death": 1
+            },
+            "confirmed": {
+                "cured": 117,
+                "death": 6,
+                "interned": 0,
+                "uti": 10,
+                "isolated": 73
+            },
+            "non_resident_death": 2
         }
     ]
 }
